@@ -11,7 +11,7 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 # Tim Pengembang
 
-| Nama                   | Nrp                          | Peran                  |
+| Nama                   | Nrp                          | Jobdesk                  |
 |-----------------------|--------------------------------|------------------------|
 | Al Farruq R. A.      | 2122600021                      |   Project Manager      |
 | Farrel Juan M.       | 21226000                        |    Hardware Developer  |
