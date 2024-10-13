@@ -34,8 +34,8 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 | Liquid Flow Sensor 3/4 Inchi SEA               | 1      | 85,000            | 85,000     |
 | Adaptor 5V 1A            | 1      | 20,000            | 20,000     |
 | Kabel-Kabel               | 1      | 10,000            | 10,000     |
-| Cetak 3D                 | 1      | 0                 | 0          |
-| **Total Biaya**          | -      | -                 | **200,000**|
+| Cetak 3D                 | 1      | 200,000                 | 200,000           |
+| **Total Biaya**          | -      | -                 | **400,000**|
 
 # Hardware
 
