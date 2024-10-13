@@ -11,14 +11,14 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 # Tim Pengembang
 
-| Nama                   | Peran                          | Nrp                   |
+| Nama                   | Nrp                          | Peran                  |
 |-----------------------|--------------------------------|------------------------|
-| Al Farruq R. A.      | Project Manager                 | 2122600021             |
-| Farrel Juan M.       | Hardware Developer              | 21226000               |
-| M. Rizqi Atmajaya    | Project Tester                  | 2122600025             |
-| Owen Pratama S.      | Software Developer              | 2122600018             |
-| Aisyah                | Data Analyst                    | 2122600027            |
-| Rheza Firmansyah      | UX/UI Designer                  | 21226000              |
+| Al Farruq R. A.      | 2122600021                      |   Project Manager      |
+| Farrel Juan M.       | 21226000                        |    Hardware Developer  |
+| M. Rizqi Atmajaya    | 2122600025                      |  Project Tester        |
+| Owen Pratama S.      |  2122600018                     |    Software Developer  |
+| Aisyah                |  2122600027                    |  Data Analyst          |
+| Rheza Firmansyah      | 21226000                       | UX/UI Designer         |
 
 # Timeline Pengembangan
 | Minggu | Tugas                                           | Tanggal                   |
