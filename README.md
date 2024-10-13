@@ -1,3 +1,6 @@
+# AQUA SMART
+![AQUA SMART (1)](https://github.com/user-attachments/assets/5526e358-7520-43ce-8ac9-127eed4594b0)
+
 # WSN-PBL_IOT-Home-Water-Monitoring
 Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
 
