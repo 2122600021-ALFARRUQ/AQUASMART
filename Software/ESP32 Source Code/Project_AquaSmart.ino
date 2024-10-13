@@ -1,8 +1,9 @@
 //catatan pin yang digunakan pada hardware seuai desain pcb :
 // SENSOR ULTRASONIC : - PIN TRIGGER = 12
 //                     - PIN ECHO = 14
-// SENSOR FLOW       : - PIN DATA = D5  ((DISINI KARENA GAADA SENSOR FLOW MAKA MENGGUNAKAN PENGGANTI SIMULASI ROTARY ENKODER)) 
-//                     - PIN DT = GPI018, CLK = GPIO19
+// SENSOR FLOW       : - PIN DT = 18 ((DISINI KARENA GAADA SENSOR FLOW MAKA MENGGUNAKAN PENGGANTI SIMULASI ROTARY ENCODER)) 
+//                     - CLK = 19 
+//                     
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <AiEsp32RotaryEncoder.h>
