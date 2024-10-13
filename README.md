@@ -13,12 +13,13 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 | Nama                   | Nrp                          | Jobdesk                  |
 |-----------------------|--------------------------------|------------------------|
-| Al Farruq R. A.      | 2122600021                      |   Project Manager      |
-| Farrel Juan M.       | 2122600015                        |    Hardware Developer  |
-| M. Rizqi Atmajaya    | 2122600025                      |  Project Tester        |
-| Owen Pratama S.      |  2122600018                     |    Software Developer  |
-| Aisyah                |  2122600027                    |  Data Analyst          |
 | Rheza Firmansyah      | 2122600014                       | UX/UI Designer         |
+| Farrel Juan M.       | 2122600015                        |    Hardware Developer  |
+| Owen Pratama S.      |  2122600018                     |    Software Developer  |
+| Al Farruq R. A.      | 2122600021                      |   Project Manager      |
+| M. Rizqi Atmajaya    | 2122600025                      |  Project Tester        |
+| Aisyah                |  2122600027                    |  Data Analyst          |
+
 
 # Timeline Pengembangan
 | Minggu | Tugas                                           | Tanggal                   |
