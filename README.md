@@ -31,13 +31,11 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 |---------------------------|--------|-------------------|------------|
 | ESP32                     | 1      | 75,000            | 75,000     |
 | Sensor Ultrasonic         | 1      | 10,000            | 10,000     |
-| Sensor Flow               | 1      | 25,000            | 25,000     |
+| Liquid Flow Sensor 3/4 Inchi SEA               | 1      | 85,000            | 85,000     |
 | Adaptor 5V 1A            | 1      | 20,000            | 20,000     |
 | Kabel-Kabel               | 1      | 10,000            | 10,000     |
 | Cetak 3D                 | 1      | 0                 | 0          |
-| Biaya Pengujian          | -      | 0                 | 0          |
-| Cloud Platform            | -      | 0                 | 0          |
-| **Total Biaya**          | -      | -                 | **140,000**|
+| **Total Biaya**          | -      | -                 | **200,000**|
 
 # Hardware
 
