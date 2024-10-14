@@ -42,11 +42,11 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 # Hardware
 SCHEMATIC RANGKAIAN
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Schematic.jpeg?raw=true)
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Schematic.jpg?raw=true)
 
 DESAIN PCB
 
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Desain_PCB.jpeg?raw=true)
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Desain_PCB.jpg?raw=true)
 
 3D MODEL PCB
 
