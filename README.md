@@ -50,7 +50,7 @@ DESAIN PCB
 
 3D MODEL PCB
 
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/aquasmart3d.jpg?raw=true)
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/aquasmart_3D_PCB.png?raw=true)
 # Software
 ## FLOWCHART
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true)
