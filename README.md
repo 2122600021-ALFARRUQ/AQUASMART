@@ -41,8 +41,23 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 | **Total Biaya**          | -      | -                 | **400,000**|
 
 # Hardware
+SCHEMATIC RANGKAIAN
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware%20/Desain%20PCB/Schematic.jpeg?raw=true)
 
+DESAIN PCB
+
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware%20/Desain%20PCB/Desain_PCB.jpeg?raw=true)
+
+3D MODEL PCB
+
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware%20/Desain%20PCB/aquasmart3d.jpg?raw=true)
 # Software
+FLOWCHART
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/Flowchart.jpeg?raw=true)
+Simulasi Wokwi 
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/Rangkaian%20Wokwii.jpeg?raw=true)
+Link : https://wokwi.com/projects/411618765119428609
+
 
 # Spesifikasi Produk
 
