@@ -1,2 +1,0 @@
-# LINK SIMULASI WOKWI
-https://wokwi.com/projects/411618765119428609
