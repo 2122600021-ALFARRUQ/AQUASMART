@@ -7,7 +7,8 @@ Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah
 Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah kebocoran, dan menerima notifikasi dini ketika air di tangki hampir habis. Sistem juga dapat diperluas untuk memantau beberapa titik pengukuran berbeda di rumah, seperti dapur atau kamar mandi, dengan menambahkan modul tambahan.
 
 # Diagram Arsitektur
-![diagram arsitektur](https://github.com/user-attachments/assets/1f39079f-6660-4a60-ae13-af3b88021fef)
+![alt text](https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png)
+
 
 # Tim Pengembang
 
