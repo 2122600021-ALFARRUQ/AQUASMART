@@ -1,9 +1,10 @@
 //catatan pin yang digunakan pada hardware seuai desain pcb :
-// SENSOR ULTRASONIC : - PIN TRIGGER = 12
-//                     - PIN ECHO = 14
+// SENSOR ULTRASONIC : - PIN TRIGGER = 4
+//                     - PIN ECHO = 2
 // SENSOR FLOW       : - PIN DT = 18 ((DISINI KARENA GAADA SENSOR FLOW MAKA MENGGUNAKAN PENGGANTI SIMULASI ROTARY ENCODER)) 
 //                     - CLK = 19 
-//                     
+// FLOW CONTROL      : - SOLENOID_V = 13
+//                   : - POMPA AIR  = 14
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <AiEsp32RotaryEncoder.h>
@@ -17,8 +18,14 @@
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
 
 // Pin assignments for Ultrasonic sensor
-const int trigPin = 12;  // Ultrasonic Trigger Pin
-const int echoPin = 14;  // Ultrasonic Echo Pin
+const int trigPin = 4;  // Ultrasonic Trigger Pin
+const int echoPin = 2;  // Ultrasonic Echo Pin
+
+// Flow Control Components pins
+const int solenoidPin = 13;
+const int pompaAirPin = 14;
+const int solenoidOpenBtn = 34;
+const int solenoidCloseBtn = 35;
 
 // List to hold the last 5 delay times (in ms)
 float delay_times[MAX_ENTRIES];
@@ -33,7 +40,10 @@ long timeLast;      // previous recorded time (for flow rate calc)
 int lastClk = HIGH; // previous encoder clk pin state
 int newClk;         // current encoder clk pin state
 int encoderDelay = 0;   // delay get from encoder
-float flowRate;
+float flowRate;     // calculated flow-rate
+int solenoidState = 0; // the state of the solenoid
+int tresMin = 25, tresMax = 90; // Pump activation tank min and max values(in percent)
+                      // (activates at min, stops at max)
 
 // Function to convert distance to percentage (2 cm = 0%, 400 cm = 100%)
 int convertToPercentage(int distance, int jarakMin, int jarakMax) {
@@ -139,6 +149,27 @@ void encoderDisplayFlowRate(){
   lcd.print(" cm3");
 }
 
+void flowconCheck(){
+  if(percentage < tresMin){
+    digitalWrite(pompaAirPin, HIGH);
+  }
+  else if(percentage >= tresMax){
+    digitalWrite(pompaAirPin, LOW);
+  }
+}
+
+void solenoidCheck(){
+  if (digitalRead(solenoidOpenBtn) == HIGH) {
+    solenoidState = 1;
+  }
+  else if (digitalRead(solenoidCloseBtn) == HIGH) {
+    solenoidState = 0;
+  }
+}
+
+void solenoidCState(){
+  digitalWrite(solenoidPin, solenoidState);
+}
 
 void setup() {
   // Initialize Serial Monitor
@@ -152,6 +183,10 @@ void setup() {
 
   // Set up ultrasonic sensor pins
   ultrasonicSetup();
+  pinMode(solenoidPin, OUTPUT);
+  pinMode(pompaAirPin, OUTPUT);
+  pinMode(solenoidOpenBtn, INPUT);
+  pinMode(solenoidCloseBtn, INPUT);
   attachInterrupt(digitalPinToInterrupt(ENCODER_CLK), readEncoder, FALLING);
   timeNow = millis();
 }
@@ -166,7 +201,9 @@ void loop() {
   //trigger ultrasonic and calculate distance, percentage
   ultrasonicTrigger();
   ultrasonicCalculate();
-
+  flowconCheck();
+  solenoidCheck();
+  solenoidCState();
   // Display distance and percentage on the Serial Monitor
   lcd.clear();
   ultrasonicDisplayPercentage();
