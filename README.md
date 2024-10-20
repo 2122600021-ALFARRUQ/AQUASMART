@@ -62,6 +62,7 @@ DESAIN PCB
 Link : https://wokwi.com/projects/411618765119428609
 
 # Dokumentasi
+Link : https://youtu.be/5Tg6bV3kbho
 
 # Spesifikasi Produk
 
