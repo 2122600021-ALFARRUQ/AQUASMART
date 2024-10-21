@@ -6,6 +6,17 @@ Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah
 
 Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah kebocoran, dan menerima notifikasi dini ketika air di tangki hampir habis. Sistem juga dapat diperluas untuk memantau beberapa titik pengukuran berbeda di rumah, seperti dapur atau kamar mandi, dengan menambahkan modul tambahan.
 
+# Daftar Isi
+
+- [Diagram Arsitektur](#diagram-arsitektur)
+- [Tim Pengembang](#tim-pengembang)
+- [Timeline Pengembangan](#timeline-pengembangan)
+- [Estimasi Biaya](#estimasi-biaya)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Spesifikasi Produk](#spesifikasi-produk)
+- [Petunjuk Penggunaan](petunjuk-Penggunaan)
+
 # Diagram Arsitektur
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png)
 
@@ -35,11 +46,13 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 |---------------------------|--------|-------------------|------------|
 | ESP32                     | 1      | 75,000            | 75,000     |
 | Sensor Ultrasonic         | 1      | 10,000            | 10,000     |
-| Liquid Flow Sensor 3/4 Inchi SEA               | 1      | 85,000            | 85,000     |
-| Adaptor 5V 1A            | 1      | 20,000            | 20,000     |
+| Flow Sensor              | 1      | 74,000            | 74,000     |
+| Adaptor 12V 2A            | 1      | 16,000            | 16,000     |
+| Solenoid Valve              | 1      | 65,000            | 65,000     |
+| Modul Relay               | 2      | 8,200            | 16,400     |
 | Kabel-Kabel               | 1      | 10,000            | 10,000     |
 | Cetak 3D                 | 1      | 200,000                 | 200,000           |
-| **Total Biaya**          | -      | -                 | **400,000**|
+| **Total Biaya**          | -      | -                 | **466,400**|
 
 # Hardware
 SCHEMATIC RANGKAIAN
