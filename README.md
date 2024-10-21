@@ -57,7 +57,7 @@ DESAIN PCB
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true)
 
 ## Simulasi Wokwi 
-![alt text](https://github.com/oreo240202/AQUASMART/blob/Mine292-README.md-patch-1/Software/ESP32_Source_Code/Rangkaian_Wokwi.jpeg?raw=true)
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Rangkaian_Wokwi.jpeg?raw=true)
 
 Link : https://wokwi.com/projects/411618765119428609
 
