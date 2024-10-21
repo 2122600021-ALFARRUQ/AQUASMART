@@ -66,15 +66,17 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 # Hardware
 SCHEMATIC RANGKAIAN
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Schematic.jpg?raw=true)
+Berikut ini adalah hasil skematik rangkaian sistem monitoring air menggunakan software kicad
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/SCHEMATIC_V2.jpeg)
 
 DESAIN PCB
-
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/Desain_PCB.jpg?raw=true)
+Berikut ini adalah hasil layout rangkaian sistem monitoring air menggunakan software kicad
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/LAYOUT_V2.jpeg)
 
 3D MODEL PCB
+Berikut ini adalah hasil 3D  rangkaian sistem monitoring air menggunakan software kicad
+![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/3D_V2.jpeg)
 
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/aquasmart_3D_PCB.png?raw=true)
 # Software
 ## FLOWCHART
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true)
