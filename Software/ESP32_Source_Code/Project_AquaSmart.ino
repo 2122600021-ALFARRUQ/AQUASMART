@@ -2,19 +2,37 @@
 // SENSOR ULTRASONIC : - PIN TRIGGER = 4
 //                     - PIN ECHO = 2
 // SENSOR FLOW       : - PIN DT = 18 ((DISINI KARENA GAADA SENSOR FLOW MAKA MENGGUNAKAN PENGGANTI SIMULASI ROTARY ENCODER)) 
-//                     - CLK = 19 
+//                     - PIN CLK = 19 
 // FLOW CONTROL      : - SOLENOID_V = 13
 //                   : - POMPA AIR  = 14
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <AiEsp32RotaryEncoder.h>
-//cat
+#include <WiFi.h>
+#include <PubSubClient.h>
+
 #define MAX_ENTRIES 5             // Keep track of the last 5 entries
-#define VOLUME_PER_ROTATION 0.6   // 0.6 cm^3 per 18-degree rotation
+#define VOLUME_PER_ROTATION 0.6  // 0.6 cm^3 per 18-degree rotation
 #define ENCODER_DT 18             // Rotary Encoder DT Pin
 #define ENCODER_CLK 19            // Rotary Encoder CLK Pin
 #define NO_FLOW_THRESHOLD 500     // No-Flow time threshold (ms)
 
+// WiFi and MQTT setup
+const char* ssid = "Lmao";           // Replace with your WiFi SSID
+const char* password = "**********";    // Replace with your WiFi Password
+const char* mqtt_server = "broker.mqtt.cool"; // Broker address
+const int mqtt_port = 1883;
+
+// MQTT topics
+const char* topic_flowRate = "sensor/flowRate";
+const char* topic_percentage = "sensor/percentage";
+const char* topic_solenoid_control = "control/solenoid"; // Control topic for solenoid
+
+// WiFi and MQTT Client setup
+WiFiClient espClient;
+PubSubClient client(espClient);
+
+// LCD Setup
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
 
 // Pin assignments for Ultrasonic sensor
@@ -135,7 +153,7 @@ void ultrasonicDisplayPercentage(){
 
 void readEncoder() {
   timeNow = millis();
-  encoderDelay = timeNow - timeLast;
+  encoderDelay = 1 + timeNow - timeLast;
   timeLast = timeNow;
 }
 
@@ -171,17 +189,68 @@ void solenoidCState(){
   digitalWrite(solenoidPin, solenoidState);
 }
 
+// Callback function to handle incoming MQTT messages
+void callback(char* topic, byte* payload, unsigned int length) {
+  // Convert the payload to a string
+  String message;
+  for (unsigned int i = 0; i < length; i++) {
+    message += (char)payload[i];
+  }
+
+  // Check if the message is for solenoid control
+  if (String(topic) == topic_solenoid_control) {
+    if (message == "1") {
+      solenoidState = 1; // Turn ON solenoid
+    } else if (message == "0") {
+      solenoidState = 0; // Turn OFF solenoid
+    }
+    // Update solenoid pin state
+    digitalWrite(solenoidPin, solenoidState);
+    Serial.print("Solenoid State updated to: ");
+    Serial.println(solenoidState);
+  }
+}
+
+// MQTT reconnect function
+void reconnect() {
+  while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    if (client.connect("ESP32Client")) {
+      Serial.println("connected");
+      client.subscribe(topic_solenoid_control);
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      delay(2000);  // Wait and retry connection
+    }
+  }
+}
+
+// Your existing setup code
 void setup() {
   // Initialize Serial Monitor
   Serial.begin(115200);
+  
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting to wifi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("WiFi connected");
 
-  // lcd setup
+  // Initialize MQTT
+  client.setServer(mqtt_server, mqtt_port);
+  client.setCallback(callback);
+
+  // LCD and sensor setup (same as your code)
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("Kucing");
 
-  // Set up ultrasonic sensor pins
+  // Rest of your sensor setup
   ultrasonicSetup();
   pinMode(solenoidPin, OUTPUT);
   pinMode(pompaAirPin, OUTPUT);
@@ -192,23 +261,38 @@ void setup() {
 }
 
 void loop() {
-  if(millis() - timeNow >= NO_FLOW_THRESHOLD){
+  // Reconnect to MQTT if not connected
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
+
+  if (millis() - timeNow >= NO_FLOW_THRESHOLD) {
     encoderDelay = 1000;
   }
+  
   // Calculate the moving average flow rate
   flowRate = calculateMovingAverage(encoderDelay);
-  
-  //trigger ultrasonic and calculate distance, percentage
+
+  // Trigger ultrasonic and calculate distance, percentage
   ultrasonicTrigger();
   ultrasonicCalculate();
   flowconCheck();
   solenoidCheck();
   solenoidCState();
-  // Display distance and percentage on the Serial Monitor
+
+  // Display data on the Serial Monitor and LCD
   lcd.clear();
   ultrasonicDisplayPercentage();
-  //ultrasonicDisplayDistance();
   encoderDisplayFlowRate();
+
+  // Convert `flowRate` and `percentage` to strings for publishing
+  String flowRateStr = String(flowRate);
+  String percentageStr = String(percentage);
+
+  // Publish flowRate and percentage to MQTT topics
+  client.publish(topic_flowRate, flowRateStr.c_str());
+  client.publish(topic_percentage, percentageStr.c_str());
 
   // Delay before the next measurement
   delay(100);
