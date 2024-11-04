@@ -19,13 +19,15 @@
 
 // WiFi and MQTT setup
 const char* ssid = "Lmao";           // Replace with your WiFi SSID
-const char* password = "**********";    // Replace with your WiFi Password
+const char* password = "4lapankali";    // Replace with your WiFi Password
 const char* mqtt_server = "broker.mqtt.cool"; // Broker address
 const int mqtt_port = 1883;
 
 // MQTT topics
 const char* topic_flowRate = "sensor/flowRate";
 const char* topic_percentage = "sensor/percentage";
+const char* topic_solenoid = "sensor/solenoid";
+const char* topic_pump = "sensor/pump";
 const char* topic_solenoid_control = "control/solenoid"; // Control topic for solenoid
 
 // WiFi and MQTT Client setup
@@ -226,7 +228,6 @@ void reconnect() {
   }
 }
 
-// Your existing setup code
 void setup() {
   // Initialize Serial Monitor
   Serial.begin(115200);
@@ -244,7 +245,7 @@ void setup() {
   client.setServer(mqtt_server, mqtt_port);
   client.setCallback(callback);
 
-  // LCD and sensor setup (same as your code)
+  // LCD and sensor setup
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
@@ -287,10 +288,14 @@ void loop() {
   encoderDisplayFlowRate();
 
   // Convert `flowRate` and `percentage` to strings for publishing
+  String solenoidStr = String(solenoidState);
+  String pumpStr = String(digitalRead(pompaAirPin));
   String flowRateStr = String(flowRate);
   String percentageStr = String(percentage);
 
   // Publish flowRate and percentage to MQTT topics
+  //client.publish(topic_pump, pumpStr.c_str());
+  //client.publish(topic_solenoid, solenoidStr.c_str());
   client.publish(topic_flowRate, flowRateStr.c_str());
   client.publish(topic_percentage, percentageStr.c_str());
 
