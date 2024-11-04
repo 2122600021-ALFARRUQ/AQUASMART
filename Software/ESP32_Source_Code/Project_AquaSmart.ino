@@ -294,8 +294,8 @@ void loop() {
   String percentageStr = String(percentage);
 
   // Publish flowRate and percentage to MQTT topics
-  //client.publish(topic_pump, pumpStr.c_str());
-  //client.publish(topic_solenoid, solenoidStr.c_str());
+  client.publish(topic_pump, pumpStr.c_str());
+  client.publish(topic_solenoid, solenoidStr.c_str());
   client.publish(topic_flowRate, flowRateStr.c_str());
   client.publish(topic_percentage, percentageStr.c_str());
 
