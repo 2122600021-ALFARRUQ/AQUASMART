@@ -33,14 +33,8 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 
 # Tim Pengembang
 
-| Nama                   | Nrp                          | Jobdesk                  |
-|-----------------------|--------------------------------|------------------------|
-| Al Farruq R. A.      | 2122600021                      |   Project Manager      |
-| Farrel Juan M.       | 2122600015                        |    Hardware Developer  |
-| M. Rizqi Atmajaya    | 2122600025                      |  Project Tester        |
-| Owen Pratama S.      |  2122600018                     |    Software Developer  |
-| Aisyah                |  2122600027                    |  Data Analyst          |
-| Rheza Firmansyah      | 2122600014                       | UX/UI Designer         |
+![STRUKTUR AQUA SMART](https://github.com/user-attachments/assets/0372e012-ae6d-4ac8-b26e-02273f16eb6d)
+
 
 # Timeline Pengembangan
 | Minggu | Tugas                                           | Tanggal                   |
