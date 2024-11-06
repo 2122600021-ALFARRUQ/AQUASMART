@@ -24,6 +24,7 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 - [Estimasi Biaya](#estimasi-biaya)
 - [Hardware](#hardware)
 - [Software](#software)
+- [Video Aplikasi](#video-aplikasi)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -82,6 +83,9 @@ Link : https://wokwi.com/projects/411618765119428609
 
 # Dokumentasi
 Link : https://youtu.be/5Tg6bV3kbho
+
+# Video Aplikasi
+https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/a52416815df5a0eb8aa5a9d6f952c1217236421f/Aplikasi%20AquaSmart.mp4 
 
 # Spesifikasi Produk
 
