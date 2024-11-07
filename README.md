@@ -9,7 +9,9 @@ NIP: 197501272002121003
 
 
 # AQUA SMART
-![AQUA SMART (1)](https://github.com/user-attachments/assets/5526e358-7520-43ce-8ac9-127eed4594b0)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5526e358-7520-43ce-8ac9-127eed4594b0" alt="AQUA SMART Logo" width="200">
+</div>
 
 # Daftar Isi
 
@@ -51,38 +53,43 @@ Pada proyek ini ESP32 berfungsi sebagai pusat pengendali yang mengumpulkan data 
 Sensor ultrasonik merupakan sensor yang menggunakan gelombang ultrasonik. Gelombang ultrasonik yaitu gelombang yang umum digunakan untuk mendeteksi keberadaan suatu benda dengan memperkirakan jarak antara sensor dan benda tersebut. Sensor ini berfungsi untuk mengubah besaran fisis (bunyi) menjadi besaran listrik begitu pula sebaliknya. Gelombang ultrasonik memiliki frekuensi sebesar 20.000 Hz. Bunyi tersebut tidak dapat didengar oleh telinga manusia. Bunyi tersebut dapat didengar oleh hewan tertentu seperti anjing, kelelawar dan kucing. Bunyi gelombang ultrasonik dapat merambat melalui zat cair, padat dan gas. Benda cair merupakan media merambat yang paling baik untuk sensor ultrasonik jika dibandingkan dengan benda padat dan gas. 
 Pada proyek ini sensor ultrasonic digunakan untuk mengukur ketinggian air dengan memantulkan gelombang suara ke permukaan air. 
 
-## Flow Sensor
+## 3. Flow Sensor
 Flow sensor merupakan sensor yang digunakan untuk mengukur aliran cairan seperti gas atau cairan. Flow sensor memanfaatkan sub sistem mekanik dan listrik untuk mengukur perubahan atribut fisik fluida dan menghitung alirannya. Mengukur atribut fisik tergantung pada atribut fluida. Fluida gas, cair dan non-newtonian memiliki perilaku satu sama lain yang sangat berbeda sehingga metode yang digunakan untuk mengukur alirannya juga harus berbeda. Flow sensor bisa dibagi menjadi dua jenis, yaitu contact sensor dan non-contact sensor. Flow contact sensor digunakan dalam aplikasi dimana cairan atau gas yang diukur diperkirakan tidak akan tersumbat di dalam pipa ketika bersentuhan dengan bagian sensor yang bergerak. Sedangkan flow non-contact sensor tidak memiliki bagian yang bergerak dan biasanya digunakan ketika cairan atau gas yang dipantau akan terkontaminasi maupun diubah secara fisik serta bersentuhan dengan bagian yang bergerak. 
 Pada proyek ini flow sensor berfungsi untuk mengukur aliran air yang mengalir dalam pipa.
 
-## Adaptor 12V 2A
+## 4. Adaptor 12V 2A
 Adaptor 12V 2A adalah sebuah alat yang digunakan untuk mengubah sumber daya listrik dari AC (arus bolak-balik) ke DC (arus searah), dengan output 12 volt dan kemampuan untuk memberikan arus hingga 2 ampere. Adaptor ini sering digunakan untuk perangkat elektronik seperti router, CCTV, dan berbagai peralatan lainnya yang membutuhkan sumber daya 12V DC. Adaptor 12V 2A digunakan untuk menyediakan daya yang stabil dengan tegangan 12V dan arus 2A. Komponen seperti solenoid valve dan relay membutuhkan daya ini untuk beroperasi. Adaptor memastikan sistem mendapatkan tegangan yang diperlukan tanpa gangguan.
 
 ## Solenoid Valve
 Solenoid valve adalah katup yang dikendalikan oleh arus AC atau DC melalui coil/selenoida. Katup Solenoid adalah elemen control yang paling sering digunakan dalam sistem fluida. Seperti pada sistem pneumatic, sistem hidrolik atau sistem control mesin memerlukan elemen control otomatis. Katup ini bisa dikendalikan oleh ESP32 untuk membuka atau menutup aliran sesuai kebutuhan.
 Solenoid valve akan beroperasi jika coil/kumparan menerima tegangan arus yang sesuai dengan tegangan operasi (kebanyakan tegangan kerja katup solenoid adalah 100/200 VAC dan sebagian besar tegangan operasi pada tegangan DC adalah 12/24 VDC). Dan sebuah pin akan tertarik akibat gaya magnet yang dihasilkan oleh kumparan solenoid. Dan saat pin sitarik ke atas, cairan akan mengalir dengan cepat dari rongga C ke bagian D. Oleh karena itu, tekanan di rongga C berkurang dan tekanan cairan yang masuk akan menaikkan diafragma. Biarkan katup utama terbuka dan cairan mengalir langsung dari A ke F.
 
-## Modul Relay
+## 5. Modul Relay
 Modul relay Arduino adalah perangkat keras yang berfungsi untuk mengontrol perangkat listrik eksternal seperti motor, lampu dan peralatan rumah tangga lainnya menggunakan platform Arduino. Modul ini terdiri dari relay dan beberapa komponen pendukung lainnya yang terintegrasi dengan papan sirkuit terpadu (PCB). Sedangkan relay adalah saklar elektronik yang dapat dikontrol secara elektrik. Ketika relay diberikan sinyal listrik, kontaknya akan terbuka atau tertutup, sehingga memungkinkan arus listrik mengalir atau terputus. Pada umumnya, modul relay ini terhubung ke papan Arduino melalui pin digital.
 Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman, seperti solenoid valve atau pompa air, melalui sinyal dari mikrokontroler.
 
 # Diagram Arsitektur
-![alt text](https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png)
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png" alt="Gambar">
+</div>
 
 # Tim Pengembang
-
-![STRUKTUR AQUA SMART](https://github.com/user-attachments/assets/0372e012-ae6d-4ac8-b26e-02273f16eb6d)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0372e012-ae6d-4ac8-b26e-02273f16eb6d" alt="STRUKTUR AQUA SMART" width="400">
+</div>
 
 # Timeline Pengembangan
+<div align="center">
 | Minggu | Tugas                                           | Tanggal                   |
 |--------|-------------------------------------------------|---------------------------|
 | 1      | Perencanaan dan pengajuan proposal              | 01-10-2024 s/d 07-10-2024 |
 | 2      | Pengembangan hardware dan pemrograman ESP32     | 08-10-2024 s/d 14-10-2024 |
 | 3      | Pengujian sistem IoT dan integrasi cloud        | 15-10-2024 s/d 21-10-2024 |
 | 4      | Finalisasi dan presentasi proyek                | 22-10-2024 s/d 28-10-2024 |
+</div>
 
 # Estimasi Biaya
-
+<div align="center">
 | Item                       | Jumlah | Harga Satuan (Rp) | Total (Rp) |
 |---------------------------|--------|-------------------|------------|
 | ESP32                     | 1      | 75,000            | 75,000     |
@@ -94,26 +101,38 @@ Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman,
 | Kabel-Kabel               | 1      | 10,000            | 10,000     |
 | Cetak 3D                 | 1      | 200,000                 | 200,000           |
 | **Total Biaya**          | -      | -                 | **466,400**|
+</div>
 
 # Hardware
-## SCHEMATIC RANGKAIAN
-Berikut ini adalah hasil skematik rangkaian sistem monitoring air menggunakan software kicad
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/SCHEMATIC_V2.jpeg)
+## 1. SCHEMATIC RANGKAIAN
+Berikut ini adalah hasil skematik rangkaian sistem monitoring air menggunakan software Kicad
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/SCHEMATIC_V2.jpeg" alt="SCHEMATIC RANGKAIAN" width="500">
+</div>
 
-## DESAIN PCB
-Berikut ini adalah hasil layout rangkaian sistem monitoring air menggunakan software kicad
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/LAYOUT_V2.jpeg)
+## 2. DESAIN PCB
+Berikut ini adalah hasil layout rangkaian sistem monitoring air menggunakan software Kicad
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/LAYOUT_V2.jpeg" alt="DESAIN PCB" width="500">
+</div>
 
-## 3D MODEL PCB
-Berikut ini adalah hasil 3D  rangkaian sistem monitoring air menggunakan software kicad
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/3D_V2.jpeg)
+## 3. 3D MODEL PCB
+Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software Kicad
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/3D_V2.jpeg" alt="3D MODEL PCB" width="500">
+</div>
 
 # Software
-## FLOWCHART
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true)
 
-## Simulasi Wokwi 
-![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Rangkaian_Wokwi.jpeg?raw=true)
+## 1. FLOWCHART
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true" alt="FLOWCHART" width="500">
+</div>
+
+## 2. Simulasi Wokwi
+<div align="center">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Rangkaian_Wokwi.jpeg?raw=true" alt="Simulasi Wokwi" width="500">
+</div>
 
 Link : https://wokwi.com/projects/411618765119428609
 
