@@ -140,7 +140,7 @@ Link : https://wokwi.com/projects/411618765119428609
 Link : https://youtu.be/5Tg6bV3kbho
 
 # Video Aplikasi
-https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/a52416815df5a0eb8aa5a9d6f952c1217236421f/Aplikasi%20AquaSmart.mp4 
+[https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/a52416815df5a0eb8aa5a9d6f952c1217236421f/Aplikasi%20AquaSmart.mp4 ](https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)
 
 # Spesifikasi Produk
 
