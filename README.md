@@ -79,17 +79,17 @@ Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman,
 </div>
 
 # Timeline Pengembangan
-<div align="center">
+
 | Minggu | Tugas                                           | Tanggal                   |
 |--------|-------------------------------------------------|---------------------------|
 | 1      | Perencanaan dan pengajuan proposal              | 01-10-2024 s/d 07-10-2024 |
 | 2      | Pengembangan hardware dan pemrograman ESP32     | 08-10-2024 s/d 14-10-2024 |
 | 3      | Pengujian sistem IoT dan integrasi cloud        | 15-10-2024 s/d 21-10-2024 |
 | 4      | Finalisasi dan presentasi proyek                | 22-10-2024 s/d 28-10-2024 |
-</div>
+
 
 # Estimasi Biaya
-<div align="center">
+
 | Item                       | Jumlah | Harga Satuan (Rp) | Total (Rp) |
 |---------------------------|--------|-------------------|------------|
 | ESP32                     | 1      | 75,000            | 75,000     |
@@ -101,7 +101,7 @@ Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman,
 | Kabel-Kabel               | 1      | 10,000            | 10,000     |
 | Cetak 3D                 | 1      | 200,000                 | 200,000           |
 | **Total Biaya**          | -      | -                 | **466,400**|
-</div>
+
 
 # Hardware
 ## 1. SCHEMATIC RANGKAIAN
