@@ -11,31 +11,61 @@ NIP: 197501272002121003
 # AQUA SMART
 ![AQUA SMART (1)](https://github.com/user-attachments/assets/5526e358-7520-43ce-8ac9-127eed4594b0)
 
-# WSN-PBL_IOT-Home-Water-Monitoring
-Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
-
-Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah kebocoran, dan menerima notifikasi dini ketika air di tangki hampir habis. Sistem juga dapat diperluas untuk memantau beberapa titik pengukuran berbeda di rumah, seperti dapur atau kamar mandi, dengan menambahkan modul tambahan.
-
 # Daftar Isi
 
+- [Deskripsi](#deskripsi)
+- [Komponen](#komponen)
+   * [ESP32](#esp32)
+   * [Sensor Ultrasonic](#sensor-ultrasonic)
+   * [Flow Sensor](#flow-sensor)
+   * [Adaptor 12V 2A](#adaptor-12v-2a)
+   * [Solenoid Valve](#solenoid-valve)
+   * [Modul Relay](#modul-relay)
 - [Diagram Arsitektur](#diagram-arsitektur)
 - [Tim Pengembang](#tim-pengembang)
 - [Timeline Pengembangan](#timeline-pengembangan)
 - [Estimasi Biaya](#estimasi-biaya)
 - [Hardware](#hardware)
+  * [Schematic Rangkaian](#schematic-rangkaian)
+  * [Desain PCB](#desain-pcb)
+  * [3D Model PCB](#3d-model-pcb)
 - [Software](#software)
+  * [Flowchart](#flowchart)
+  * [Simulasi Wokwi](#simulasi-wokwi) 
 - [Video Aplikasi](#video-aplikasi)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
+# Deskripsi
+Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
+
+Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah kebocoran, dan menerima notifikasi dini ketika air di tangki hampir habis. Sistem juga dapat diperluas untuk memantau beberapa titik pengukuran berbeda di rumah, seperti dapur atau kamar mandi, dengan menambahkan modul tambahan.
+
+# Komponen
+## ## ESP32
+Penjelasan mengenai ESP32...
+
+## Sensor Ultrasonic
+Penjelasan mengenai Sensor Ultrasonic...
+
+## Flow Sensor
+Penjelasan mengenai Flow Sensor...
+
+## Adaptor 12V 2A
+Penjelasan mengenai Adaptor 12V 2A...
+
+## Solenoid Valve
+Penjelasan mengenai Solenoid Valve...
+
+## Modul Relay
+Penjelasan mengenai Modul Relay...
+
 # Diagram Arsitektur
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png)
-
 
 # Tim Pengembang
 
 ![STRUKTUR AQUA SMART](https://github.com/user-attachments/assets/0372e012-ae6d-4ac8-b26e-02273f16eb6d)
-
 
 # Timeline Pengembangan
 | Minggu | Tugas                                           | Tanggal                   |
@@ -60,15 +90,15 @@ Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah k
 | **Total Biaya**          | -      | -                 | **466,400**|
 
 # Hardware
-SCHEMATIC RANGKAIAN
+## SCHEMATIC RANGKAIAN
 Berikut ini adalah hasil skematik rangkaian sistem monitoring air menggunakan software kicad
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/SCHEMATIC_V2.jpeg)
 
-DESAIN PCB
+## DESAIN PCB
 Berikut ini adalah hasil layout rangkaian sistem monitoring air menggunakan software kicad
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/LAYOUT_V2.jpeg)
 
-3D MODEL PCB
+## 3D MODEL PCB
 Berikut ini adalah hasil 3D  rangkaian sistem monitoring air menggunakan software kicad
 ![alt text](https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/3D_V2.jpeg)
 
