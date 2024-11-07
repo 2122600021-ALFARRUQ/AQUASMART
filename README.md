@@ -17,23 +17,23 @@ NIP: 197501272002121003
 
 - [Deskripsi](#deskripsi)
 - [Komponen](#komponen)
-   * [ESP32](#esp32)
-   * [Sensor Ultrasonic](#sensor-ultrasonic)
-   * [Flow Sensor](#flow-sensor)
-   * [Adaptor 12V 2A](#adaptor-12v-2a)
-   * [Solenoid Valve](#solenoid-valve)
-   * [Modul Relay](#modul-relay)
+   * [ESP32](#1-esp32)
+   * [Sensor Ultrasonic](#2-sensor-ultrasonic)
+   * [Flow Sensor](#3-flow-sensor)
+   * [Adaptor 12V 2A](#4-adaptor-12v-2a)
+   * [Solenoid Valve](#5-solenoid-valve)
+   * [Modul Relay](#6-modul-relay)
 - [Diagram Arsitektur](#diagram-arsitektur)
 - [Tim Pengembang](#tim-pengembang)
 - [Timeline Pengembangan](#timeline-pengembangan)
 - [Estimasi Biaya](#estimasi-biaya)
 - [Hardware](#hardware)
-  * [Schematic Rangkaian](#schematic-rangkaian)
-  * [Desain PCB](#desain-pcb)
-  * [3D Model PCB](#3d-model-pcb)
+  * [Schematic Rangkaian](#1-schematic-rangkaian)
+  * [Desain PCB](#2-desain-pcb)
+  * [3D Model PCB](#3-3d-model-pcb)
 - [Software](#software)
-  * [Flowchart](#flowchart)
-  * [Simulasi Wokwi](#simulasi-wokwi) 
+  * [Flowchart](#1-flowchart)
+  * [Simulasi Wokwi](#2-simulasi-wokwi) 
 - [Video Aplikasi](#video-aplikasi)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
@@ -60,11 +60,11 @@ Pada proyek ini flow sensor berfungsi untuk mengukur aliran air yang mengalir da
 ## 4. Adaptor 12V 2A
 Adaptor 12V 2A adalah sebuah alat yang digunakan untuk mengubah sumber daya listrik dari AC (arus bolak-balik) ke DC (arus searah), dengan output 12 volt dan kemampuan untuk memberikan arus hingga 2 ampere. Adaptor ini sering digunakan untuk perangkat elektronik seperti router, CCTV, dan berbagai peralatan lainnya yang membutuhkan sumber daya 12V DC. Adaptor 12V 2A digunakan untuk menyediakan daya yang stabil dengan tegangan 12V dan arus 2A. Komponen seperti solenoid valve dan relay membutuhkan daya ini untuk beroperasi. Adaptor memastikan sistem mendapatkan tegangan yang diperlukan tanpa gangguan.
 
-## Solenoid Valve
+## 5. Solenoid Valve
 Solenoid valve adalah katup yang dikendalikan oleh arus AC atau DC melalui coil/selenoida. Katup Solenoid adalah elemen control yang paling sering digunakan dalam sistem fluida. Seperti pada sistem pneumatic, sistem hidrolik atau sistem control mesin memerlukan elemen control otomatis. Katup ini bisa dikendalikan oleh ESP32 untuk membuka atau menutup aliran sesuai kebutuhan.
 Solenoid valve akan beroperasi jika coil/kumparan menerima tegangan arus yang sesuai dengan tegangan operasi (kebanyakan tegangan kerja katup solenoid adalah 100/200 VAC dan sebagian besar tegangan operasi pada tegangan DC adalah 12/24 VDC). Dan sebuah pin akan tertarik akibat gaya magnet yang dihasilkan oleh kumparan solenoid. Dan saat pin sitarik ke atas, cairan akan mengalir dengan cepat dari rongga C ke bagian D. Oleh karena itu, tekanan di rongga C berkurang dan tekanan cairan yang masuk akan menaikkan diafragma. Biarkan katup utama terbuka dan cairan mengalir langsung dari A ke F.
 
-## 5. Modul Relay
+## 6. Modul Relay
 Modul relay Arduino adalah perangkat keras yang berfungsi untuk mengontrol perangkat listrik eksternal seperti motor, lampu dan peralatan rumah tangga lainnya menggunakan platform Arduino. Modul ini terdiri dari relay dan beberapa komponen pendukung lainnya yang terintegrasi dengan papan sirkuit terpadu (PCB). Sedangkan relay adalah saklar elektronik yang dapat dikontrol secara elektrik. Ketika relay diberikan sinyal listrik, kontaknya akan terbuka atau tertutup, sehingga memungkinkan arus listrik mengalir atau terputus. Pada umumnya, modul relay ini terhubung ke papan Arduino melalui pin digital.
 Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman, seperti solenoid valve atau pompa air, melalui sinyal dari mikrokontroler.
 
