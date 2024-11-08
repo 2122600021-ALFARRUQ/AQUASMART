@@ -35,6 +35,7 @@ NIP: 197501272002121003
   * [Flowchart](#1-flowchart)
   * [Simulasi Wokwi](#2-simulasi-wokwi) 
 - [Video Aplikasi](#video-aplikasi)
+- [Video Pengujian Sensor Ultrasonik](#video-pengujian-sensor-ultrasonik)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -141,7 +142,11 @@ Link : https://wokwi.com/projects/411618765119428609
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
 
 # Video Aplikasi
-[https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/a52416815df5a0eb8aa5a9d6f952c1217236421f/Aplikasi%20AquaSmart.mp4 ](https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)
+(https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)
+
+# Video Pengujian Sensor Ultrasonik
+
+https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
 
 # Spesifikasi Produk
 
