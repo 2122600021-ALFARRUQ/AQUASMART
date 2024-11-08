@@ -1,12 +1,4 @@
-# <div align="center">Project PBL Jaringan Sensor</div>
-### <div align="center">Prodi Elektronika - PENS</div>
-
-## <div align="center">Dosen Pengampu</div>
-<div align="center">
-Akhmad Hendriawan, ST, MT <br>
-NIP: 197501272002121003
-</div>
-
+![flyer](https://github.com/user-attachments/assets/6e9112aa-8cb3-4763-a0f8-a7f793d0ec59)
 
 # AQUA SMART
 <div align="center">
