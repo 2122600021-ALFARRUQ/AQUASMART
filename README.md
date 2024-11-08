@@ -129,6 +129,11 @@ Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software
 
 Link : https://wokwi.com/projects/411618765119428609
 
+## 3. NODE-RED
+<div align="center">
+    <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/UI/UX-Design/Design_nodered.png" alt="FLOWCHART" width="500">
+</div>
+
 # Dokumentasi
 
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
