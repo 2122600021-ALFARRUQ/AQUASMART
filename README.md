@@ -25,7 +25,9 @@
   * [3D Model PCB](#3-3d-model-pcb)
 - [Software](#software)
   * [Flowchart](#1-flowchart)
-  * [Simulasi Wokwi](#2-simulasi-wokwi) 
+  * [Simulasi Wokwi](#2-simulasi-wokwi)
+- [Video Percobaan Pengiriman Data dari ESP32 ke Broker MQTT](#video-percobaan-pengiriman-data-dari-esp32-ke-broker-mqtt)
+- [Dokumentasi](#dokumentasi)
 - [Video Aplikasi](#video-aplikasi)
 - [Video Pengujian Sensor Ultrasonik](#video-pengujian-sensor-ultrasonik)
 - [Spesifikasi Produk](#spesifikasi-produk)
@@ -134,12 +136,16 @@ Link : https://wokwi.com/projects/411618765119428609
     <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/UI/UX-Design/Design_nodered.png" alt="Simulasi Wokwi" width="500">
 </div>
 
+# Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
+
+https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
+
 # Dokumentasi
 
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
 
 # Video Aplikasi
-(https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)
+[(https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)](https://github.com/2122600021-ALFARRUQ/AQUASMART/issues/35#issue-2639989588)
 
 # Video Pengujian Sensor Ultrasonik
 
