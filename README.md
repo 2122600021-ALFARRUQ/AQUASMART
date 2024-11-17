@@ -136,6 +136,11 @@ Link : https://wokwi.com/projects/411618765119428609
     <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/UI/UX-Design/Design_nodered.png" alt="Simulasi Wokwi" width="500">
 </div>
 
+## 4. SEQUENCE
+<div align="center">
+    <img src="https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/3778b2f44b3d93d860f37e5c0d14aa3951c5bfdd/Diagram/squance.png?raw=true" alt="SEQUENCE" width="500">
+</div>
+
 # Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
 
 https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
