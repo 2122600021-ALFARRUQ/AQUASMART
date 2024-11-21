@@ -1,4 +1,4 @@
-![flyer](https://github.com/user-attachments/assets/6e9112aa-8cb3-4763-a0f8-a7f793d0ec59)
+![flyer](https://github.com/user-attachments/assets/078f21d2-d860-4f91-8444-4bdbab0fef4a)
 
 # AQUA SMART
 <div align="center">
