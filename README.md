@@ -18,7 +18,7 @@
 - [Diagram Arsitektur](#diagram-arsitektur)
 - [Tim Pengembang](#tim-pengembang)
 - [Timeline Pengembangan](#timeline-pengembangan)
-- [Estimasi Biaya](#estimasi-biaya)
+- [Rincian Pengeluaran Biaya](#rincian-pengeluaran-biaya)
 - [Hardware](#hardware)
   * [Schematic Rangkaian](#1-schematic-rangkaian)
   * [Desain PCB](#2-desain-pcb)
@@ -26,10 +26,16 @@
 - [Software](#software)
   * [Flowchart](#1-flowchart)
   * [Simulasi Wokwi](#2-simulasi-wokwi)
-- [Video Percobaan Pengiriman Data dari ESP32 ke Broker MQTT](#video-percobaan-pengiriman-data-dari-esp32-ke-broker-mqtt)
+  * [Node-Red](#3-node-red)
+  * [Sequence Diagram](#4-sequence-diagram)
+  * [Class Diagram](#5-class-diagram)
 - [Dokumentasi](#dokumentasi)
-- [Video Aplikasi](#video-aplikasi)
-- [Video Pengujian Sensor Ultrasonik](#video-pengujian-sensor-ultrasonik)
+  * [Video Percobaan Pengiriman Data dari ESP32 ke Broker MQTT](#1-video-percobaan-pengiriman-data-dari-esp32-ke-broker-mqtt)
+  * [Video Simulasi Wokwi](#2-video-simulasi-wokwi)
+  * [Video Simulasi Aplikasi](#3-video-simulasi-aplikasi)
+    * [3.1 Video Simulasi Aplikasi Web](#31-video-simulasi-aplikasi-web)
+    * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
+  * [Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -80,10 +86,10 @@ Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman,
 | 1      | Perencanaan dan pengajuan proposal              | 01-10-2024 s/d 07-10-2024 |
 | 2      | Pengembangan hardware dan pemrograman ESP32     | 08-10-2024 s/d 14-10-2024 |
 | 3      | Pengujian sistem IoT dan integrasi cloud        | 15-10-2024 s/d 21-10-2024 |
-| 4      | Finalisasi dan presentasi proyek                | 22-10-2024 s/d 28-10-2024 |
+| 4      | Finalisasi dan presentasi proyek                | 22-10-2024 s/d 04-11-2024 |
 
 
-# Estimasi Biaya
+# Rincian Pengeluaran Biaya
 
 | Item                       | Jumlah | Harga Satuan (Rp) | Total (Rp) |
 |---------------------------|--------|-------------------|------------|
@@ -146,19 +152,21 @@ Link : https://wokwi.com/projects/411618765119428609
     <img src="https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/main/Diagram/class.png?raw=true" alt="CLASS DIAGRAM" width="500">
 </div>
 
-# Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
-
-https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
-
 # Dokumentasi
 
+## 1. Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
+https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
+
+## 2. Video Simulasi Wokwi
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
 
-# Video Aplikasi
-[(https://github.com/user-attachments/assets/bdbf62a1-ba29-4b3a-aca4-8215bf1cfdcd)](https://github.com/2122600021-ALFARRUQ/AQUASMART/issues/35#issue-2639989588)
+## 3. Video Simulasi Aplikasi
+### 3.1 Video Simulasi Aplikasi Web
+https://github.com/user-attachments/assets/d782f18b-91e5-41b1-a5a1-bee070e43c8c
+### 3.2 Video Simulasi Aplikasi Mobile
+https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
 
-# Video Pengujian Sensor Ultrasonik
-
+## 4. Video Pengujian Sensor Ultrasonik
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
 
 # Spesifikasi Produk
