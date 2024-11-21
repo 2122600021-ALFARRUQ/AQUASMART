@@ -37,6 +37,8 @@
     * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
   * [4. Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
   * [5. Proses Pengerjaan](#5-proses-pengerjaan)
+  * [6. Video Pengiklanan](#6-video-pengiklanan)
+  * [7. Video Presentasi](#7-video-presentasi)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -176,6 +178,11 @@ https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40
   <img src="https://github.com/user-attachments/assets/b8ea3627-333c-4b8a-a423-c07887acc34b" alt="Image 4" width="200">
   <img src="https://github.com/user-attachments/assets/104cba61-26aa-4e5f-aec0-28c381f2a529" alt="Image 5" width="200">
 </p>
+
+## 6. Video Pengiklanan 
+https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d 
+## 7. Video Presentasi
+https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
 # Spesifikasi Produk
 
