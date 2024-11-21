@@ -36,6 +36,7 @@
     * [3.1 Video Simulasi Aplikasi Web](#31-video-simulasi-aplikasi-web)
     * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
   * [4. Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
+  * [5. Proses Pengerjaan](#5-proses-pengerjaan)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -156,18 +157,25 @@ Link : https://wokwi.com/projects/411618765119428609
 
 ## 1. Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
 https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
-
 ## 2. Video Simulasi Wokwi
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
-
 ## 3. Video Simulasi Aplikasi
 ### 3.1 Video Simulasi Aplikasi Web
 https://github.com/user-attachments/assets/d782f18b-91e5-41b1-a5a1-bee070e43c8c
 ### 3.2 Video Simulasi Aplikasi Mobile
 https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
-
 ## 4. Video Pengujian Sensor Ultrasonik
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
+## 5. Proses Pengerjaan
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b48404d0-b90c-4dd7-b640-3d69c6e4e424" alt="Image 1" width="200">
+  <img src="https://github.com/user-attachments/assets/93b567e6-60e9-42d6-a9c2-8a759874346b" alt="Image 2" width="200">
+  <img src="https://github.com/user-attachments/assets/d0b173b4-0548-4b1a-8c1d-f2d03dced3e8" alt="Image 3" width="200">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b8ea3627-333c-4b8a-a423-c07887acc34b" alt="Image 4" width="200">
+  <img src="https://github.com/user-attachments/assets/104cba61-26aa-4e5f-aec0-28c381f2a529" alt="Image 5" width="200">
+</p>
 
 # Spesifikasi Produk
 
