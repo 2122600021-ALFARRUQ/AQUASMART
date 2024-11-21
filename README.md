@@ -74,7 +74,7 @@ Modul Relay memungkinkan ESP32 mengontrol perangkat tegangan tinggi dengan aman,
 
 # Diagram Arsitektur
 <div align="center">
-    <img src="https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png" alt="Gambar">
+    <img src="https://github.com/oreo240202/AQUASMART/blob/77f9cb3edbcd3e97788744c1c1b3db2177442cfd/versibaru.drawio%20(1).png" alt="Gambar"width="600">
 </div>
 
 # Tim Pengembang
@@ -130,7 +130,7 @@ Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software
 
 ## 1. FLOWCHART
 <div align="center">
-    <img src="https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Flowchart_Program_ESP32.svg?raw=true" alt="FLOWCHART" width="500">
+    <img src="https://github.com/user-attachments/assets/4fdbddaa-5829-4554-b1dc-bb49611a2188" alt="image" width="500">
 </div>
 
 ## 2. Simulasi Wokwi
