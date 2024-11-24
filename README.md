@@ -5,6 +5,13 @@
     <img src="https://github.com/user-attachments/assets/5526e358-7520-43ce-8ac9-127eed4594b0" alt="AQUA SMART Logo" width="200">
 </div>
 
+## **Supported By:**  
+🌟 **Dosen Pengampu:** Akhmad Hendriawan, S.T., M.T.  *(NIP: 197501272002121003)*  
+🎓 **Mata Kuliah:** IOT dan Jaringan Sensor  
+🎯 **Program Studi:** Sarjana Terapan Teknik Elektronika  
+🏫 **Politeknik Elektronika Negeri Surabaya**  
+
+
 # Daftar Isi
 
 - [Deskripsi](#deskripsi)
@@ -36,9 +43,10 @@
     * [3.1 Video Simulasi Aplikasi Web](#31-video-simulasi-aplikasi-web)
     * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
   * [4. Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
-  * [5. Proses Pengerjaan](#5-proses-pengerjaan)
-  * [6. Video Pengiklanan](#6-video-pengiklanan)
-  * [7. Video Presentasi](#7-video-presentasi)
+  * [5. Video Penggunaan Alat](#5-video-penggunaan-alat)
+  * [6. Proses Pengerjaan](#6-proses-pengerjaan)
+  * [7. Video Pengiklanan](#7-video-pengiklanan)
+  * [8. Video Presentasi](#8-video-presentasi)
 - [Spesifikasi Produk](#spesifikasi-produk)
 - [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
@@ -157,7 +165,7 @@ Link : https://wokwi.com/projects/411618765119428609
 
 # Dokumentasi
 
-## 1. Video Percobaan pengiriman data dari Esp 32 ke Broker MQTT
+## 1. Video Percobaan Pengiriman Data dari ESP32 ke Broker MQTT
 https://github.com/user-attachments/assets/0b649f9e-3a0d-4be2-93d4-879152762dc5 
 ## 2. Video Simulasi Wokwi
 https://github.com/user-attachments/assets/3788917b-d15c-42b3-9d15-79d57b5753b3 
@@ -168,7 +176,9 @@ https://github.com/user-attachments/assets/d782f18b-91e5-41b1-a5a1-bee070e43c8c
 https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
 ## 4. Video Pengujian Sensor Ultrasonik
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
-## 5. Proses Pengerjaan
+## 5. Video Penggunaan Alat
+Link : https://drive.google.com/drive/folders/1OPCK6A9JROWr-ocdMjcz_6QO9YeVU3Sy
+## 6. Proses Pengerjaan
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b48404d0-b90c-4dd7-b640-3d69c6e4e424" alt="Image 1" width="200">
   <img src="https://github.com/user-attachments/assets/93b567e6-60e9-42d6-a9c2-8a759874346b" alt="Image 2" width="200">
@@ -179,9 +189,9 @@ https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40
   <img src="https://github.com/user-attachments/assets/104cba61-26aa-4e5f-aec0-28c381f2a529" alt="Image 5" width="200">
 </p>
 
-## 6. Video Pengiklanan 
+## 7. Video Pengiklanan 
 https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d 
-## 7. Video Presentasi
+## 8. Video Presentasi
 https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
 # Spesifikasi Produk
