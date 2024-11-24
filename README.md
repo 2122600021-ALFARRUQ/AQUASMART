@@ -142,7 +142,7 @@ Link : https://wokwi.com/projects/411618765119428609
 
 ## 3. NODE-RED
 <div align="center">
-    <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/UI/UX-Design/Design_nodered.png" alt="Simulasi Wokwi" width="500">
+    <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/refs/heads/Website/Diagram/node_red_flow.png" alt="Simulasi Wokwi" width="500">
 </div>
 
 ## 4. SEQUENCE DIAGRAM
