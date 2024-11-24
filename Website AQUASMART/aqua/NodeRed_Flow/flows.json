@@ -1,0 +1,213 @@
+[
+    {
+        "id": "8f84ee89e34d2743",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f5b8261347798efc",
+        "type": "mqtt in",
+        "z": "8f84ee89e34d2743",
+        "name": "",
+        "topic": "AQUASMART/sensor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e36cf7655dec0ef0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "8cdd48f52e21ef40",
+                "bb825f081609b45b"
+            ]
+        ]
+    },
+    {
+        "id": "8cdd48f52e21ef40",
+        "type": "function",
+        "z": "8f84ee89e34d2743",
+        "name": "function 1",
+        "func": "// var flowRate = msg.payload.flowRate;\n// var percentage = msg.payload.percentage;\n// var solenoidState = msg.payload.solenoidState;\n// var pumpState = msg.payload.pumpState;\nvar str = msg.payload;\nvar values = str.split(\",\");\nmsg.payload = { flowRate: values[0], percentage: values[1], solenoidState: values[2], pumpState: values[3] };\n\nmsg.topic = \"INSERT INTO tandon(flowRate, kapasitas, solenoidState, pumpState)\" + \"VALUES ('\"+msg.payload.flowRate+\"', '\"+msg.payload.percentage+\"', '\"+msg.payload.solenoidState+\"', '\"+msg.payload.pumpState+\"');\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "dffccccb56c5d89a",
+                "d4258de25ee5c1fd"
+            ]
+        ]
+    },
+    {
+        "id": "dffccccb56c5d89a",
+        "type": "debug",
+        "z": "8f84ee89e34d2743",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d4258de25ee5c1fd",
+        "type": "mysql",
+        "z": "8f84ee89e34d2743",
+        "mydb": "92ebf078661a6c1f",
+        "name": "AquaSmart Database",
+        "x": 660,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "319999a8f54ab6f8",
+        "type": "mqtt out",
+        "z": "8f84ee89e34d2743",
+        "name": "",
+        "topic": "control/solenoid",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e36cf7655dec0ef0",
+        "x": 720,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f48685386e91328f",
+        "type": "mysql",
+        "z": "8f84ee89e34d2743",
+        "mydb": "92ebf078661a6c1f",
+        "name": "",
+        "x": 400,
+        "y": 260,
+        "wires": [
+            [
+                "9bfbd7726c7d42bc"
+            ]
+        ]
+    },
+    {
+        "id": "bb825f081609b45b",
+        "type": "function",
+        "z": "8f84ee89e34d2743",
+        "name": "function 2",
+        "func": "msg.topic = \"SELECT solenoid_state FROM solenoidstate WHERE id = 1;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "f48685386e91328f"
+            ]
+        ]
+    },
+    {
+        "id": "836e741af14ccf4c",
+        "type": "debug",
+        "z": "8f84ee89e34d2743",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9bfbd7726c7d42bc",
+        "type": "function",
+        "z": "8f84ee89e34d2743",
+        "name": "function 3",
+        "func": "var state = msg.payload[0].solenoid_state;\nmsg.payload = state;\nmsg.topic = '';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "836e741af14ccf4c",
+                "319999a8f54ab6f8"
+            ]
+        ]
+    },
+    {
+        "id": "e36cf7655dec0ef0",
+        "type": "mqtt-broker",
+        "name": "AquaSmart",
+        "broker": "broker.mqtt.cool",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "92ebf078661a6c1f",
+        "type": "MySQLdatabase",
+        "name": "aquasmart-database",
+        "host": "as-db.mysql.database.azure.com",
+        "port": "3306",
+        "db": "aquasmart-database",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

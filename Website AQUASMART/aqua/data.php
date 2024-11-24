@@ -1,9 +1,9 @@
 <?php
 // Database connection
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "as_db";
+$host = "as-db.mysql.database.azure.com";
+$user = "zwfvqusiix";
+$password = "xKnW$jS1dx8SKF8S";
+$database = "aquasmart-database";
 
 $conn = new mysqli($host, $user, $password, $database);
 
