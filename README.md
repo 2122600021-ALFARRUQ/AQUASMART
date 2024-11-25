@@ -47,8 +47,6 @@
   * [6. Proses Pengerjaan](#6-proses-pengerjaan)
   * [7. Video Pengiklanan](#7-video-pengiklanan)
   * [8. Video Presentasi](#8-video-presentasi)
-- [Spesifikasi Produk](#spesifikasi-produk)
-- [Petunjuk Penggunaan](petunjuk-Penggunaan)
 
 # Deskripsi
 Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
@@ -194,7 +192,4 @@ https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d
 ## 8. Video Presentasi
 https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
-# Spesifikasi Produk
-
-# Petunjuk Penggunaan
 
