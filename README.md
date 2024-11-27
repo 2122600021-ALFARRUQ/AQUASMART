@@ -176,7 +176,7 @@ https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
 ## 4. Video Pengujian Sensor Ultrasonik
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
 ## 5. Video Pengujian Hardware
-https://github.com/2122600021-ALFARRUQ/AQUASMART/issues/46#issue-2699780176
+https://github.com/user-attachments/assets/dedbf46f-3d43-4d81-ba96-16eca15a14ef
 ## 6. Video Penggunaan Alat
 Link : https://drive.google.com/drive/folders/1OPCK6A9JROWr-ocdMjcz_6QO9YeVU3Sy
 ## 7. Proses Pengerjaan
