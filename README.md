@@ -44,10 +44,9 @@
     * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
   * [4. Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
   * [5. Video Pengujian Hardware](#5-video-pengujian-hardware)
-  * [6. Video Penggunaan Alat](#5-video-penggunaan-alat)
-  * [7. Proses Pengerjaan](#6-proses-pengerjaan)
-  * [8. Video Pengiklanan](#7-video-pengiklanan)
-  * [9. Video Presentasi](#8-video-presentasi)
+  * [6. Proses Pengerjaan](#6-proses-pengerjaan)
+  * [7. Video Pengiklanan](#7-video-pengiklanan)
+  * [8. Video Presentasi](#8-video-presentasi)
 
 # Deskripsi
 Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
@@ -177,9 +176,7 @@ https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
 ## 5. Video Pengujian Hardware
 https://github.com/user-attachments/assets/dedbf46f-3d43-4d81-ba96-16eca15a14ef
-## 6. Video Penggunaan Alat
-Link : https://drive.google.com/drive/folders/1OPCK6A9JROWr-ocdMjcz_6QO9YeVU3Sy
-## 7. Proses Pengerjaan
+## 6. Proses Pengerjaan
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b48404d0-b90c-4dd7-b640-3d69c6e4e424" alt="Image 1" width="200">
   <img src="https://github.com/user-attachments/assets/93b567e6-60e9-42d6-a9c2-8a759874346b" alt="Image 2" width="200">
@@ -190,9 +187,9 @@ Link : https://drive.google.com/drive/folders/1OPCK6A9JROWr-ocdMjcz_6QO9YeVU3Sy
   <img src="https://github.com/user-attachments/assets/104cba61-26aa-4e5f-aec0-28c381f2a529" alt="Image 5" width="200">
 </p>
 
-## 8. Video Pengiklanan 
+## 7. Video Pengiklanan 
 https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d 
-## 9. Video Presentasi
+## 8. Video Presentasi
 https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
 
