@@ -31,6 +31,7 @@
   * [1. Schematic Rangkaian](#1-schematic-rangkaian)
   * [2. Desain PCB](#2-desain-pcb)
   * [3. 3D Model PCB](#3-3d-model-pcb)
+  * [4. Hasil 3D](4-hasil-3d)
 - [Software](#software)
   * [1. Flowchart](#1-flowchart)
   * [2. Simulasi Wokwi](#2-simulasi-wokwi)
@@ -141,6 +142,19 @@ Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software
 Link Thingiverse : https://www.thingiverse.com/thing:6853870
 
 Link PCB jadi : https://github.com/2122600021-ALFARRUQ/AQUASMART/tree/10eaccd06828d46e413301323a7a25bb22af950c/Hardware/Foto
+
+## 4. Hasil 3D
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3d55fd7e-ca15-40f4-9d8d-e5aac5fe8875" alt="Image 1" width="200">
+  <img src="https://github.com/user-attachments/assets/c399de58-fb04-411d-a766-885d6ae92118" alt="Image 2" width="200">
+  <img src="https://github.com/user-attachments/assets/14b5acef-46f2-49b5-b3fd-c62517d3fc81" alt="Image 3" width="200">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd77f54c-5609-4e1f-b75a-e6f6a48dba47" alt="Image 4" width="200">
+  <img src="https://github.com/user-attachments/assets/2d9a2330-9f78-4144-8932-9132c6fc14ab" alt="Image 5" width="200">
+</p>
+
+
 
 # Software
 
