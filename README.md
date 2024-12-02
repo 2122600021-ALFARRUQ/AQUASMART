@@ -15,6 +15,7 @@
 # Daftar Isi
 
 - [Deskripsi](#deskripsi)
+- [Buku Panduan](#buku-panduan)
 - [Komponen](#komponen)
    * [1. ESP32](#1-esp32)
    * [2. Sensor Ultrasonic](#2-sensor-ultrasonic)
@@ -54,6 +55,9 @@
 Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
 
 Dengan sistem ini, pengguna dapat mengelola air secara lebih efisien, mencegah kebocoran, dan menerima notifikasi dini ketika air di tangki hampir habis. Sistem juga dapat diperluas untuk memantau beberapa titik pengukuran berbeda di rumah, seperti dapur atau kamar mandi, dengan menambahkan modul tambahan.
+
+# Buku Panduan
+[Buku Panduan AquaSmart.pdf](https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/3b80df1f71be8b21b987adbf3e9ceadbd6fab604/Buku%20Panduan%20AquaSmart.pdf)
 
 # Komponen
 ## 1. ESP32
