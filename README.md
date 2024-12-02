@@ -137,7 +137,9 @@ Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software
 <div align="center">
     <img src="https://github.com/oreo240202/AQUASMART/blob/main/Hardware/Desain_PCB/3D_V2.jpeg" alt="3D MODEL PCB" width="500">
 </div>
+
 Link Thingiverse : https://www.thingiverse.com/thing:6853870
+
 Link PCB jadi : https://github.com/2122600021-ALFARRUQ/AQUASMART/tree/10eaccd06828d46e413301323a7a25bb22af950c/Hardware/Foto
 
 # Software
