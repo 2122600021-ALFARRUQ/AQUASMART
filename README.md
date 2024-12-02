@@ -215,4 +215,6 @@ https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d
 ## 9. Video Presentasi
 https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
+slide presentasi dapat dilihat pada link berikut : https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/2130463fc0ef71a656cedb03aadac50fb50dbc7b/IOT%20DAN%20JARINGAN%20_compressed.pdf
+
 
