@@ -36,6 +36,7 @@
   * [3. Node-Red](#3-node-red)
   * [4. Sequence Diagram](#4-sequence-diagram)
   * [5. Class Diagram](#5-class-diagram)
+- [Web APP](#web-app)
 - [Dokumentasi](#dokumentasi)
   * [1. Video Percobaan Pengiriman Data dari ESP32 ke Broker MQTT](#1-video-percobaan-pengiriman-data-dari-esp32-ke-broker-mqtt)
   * [2. Video Simulasi Wokwi](#2-video-simulasi-wokwi)
@@ -44,9 +45,10 @@
     * [3.2 Video Simulasi Aplikasi Mobile](#32-video-simulasi-aplikasi-mobile)
   * [4. Video Pengujian Sensor Ultrasonik](#4-video-pengujian-sensor-ultrasonik)
   * [5. Video Pengujian Hardware](#5-video-pengujian-hardware)
-  * [6. Proses Pengerjaan](#6-proses-pengerjaan)
-  * [7. Video Pengiklanan](#7-video-pengiklanan)
-  * [8. Video Presentasi](#8-video-presentasi)
+  * [6. Video Penggunaan Alat (User)](#6-video-penggunaan-alat-user)
+  * [7. Proses Pengerjaan](#7-proses-pengerjaan)
+  * [8. Video Pengiklanan](#8-video-pengiklanan)
+  * [9. Video Presentasi](#9-video-presentasi)
 
 # Deskripsi
 Sistem Monitoring Penggunaan Air Berbasis IoT ini dirancang untuk membantu rumah tangga dalam memantau penggunaan dan ketersediaan air secara real-time. Menggunakan ESP32 sebagai kontroler utama, sistem ini memanfaatkan sensor aliran air (Flow Sensor) untuk melacak jumlah air yang digunakan serta sensor ultrasonik untuk mengukur level air di dalam tangki penyimpanan. Data yang diperoleh akan dikirimkan ke platform cloud Adafruit IO melalui protokol MQTT, di mana pengguna dapat mengaksesnya melalui aplikasi ponsel atau website.
@@ -138,11 +140,14 @@ Berikut ini adalah hasil 3D rangkaian sistem monitoring air menggunakan software
 <div align="center">
     <img src="https://github.com/user-attachments/assets/4fdbddaa-5829-4554-b1dc-bb49611a2188" alt="image" width="500">
 </div>
+Flowchart diatas menggambarkan proses kerja sistem monitoring air menggunakan sensor ultrasonic dan rotary encoder. Proses dimulai dengan inisialisasi perangkat keras (setup). Sistem memeriksa apakah waktu tanpa aliran air melebihi ambang batas (threshold). Jika ya, nilai variabel encoderDelay disetel menjadi 1000 ms. Jika tidak, sistem menghitung laju aliran air (flow rate) menggunakan fungsi calculateMovingAverage(). Selanjutnya, sensor ultrasonic diaktifkan melalui fungsi ultrasonicTrigger(), dan persentase level air dihitung menggunakan fungsi ultrasonicCalculate(). Data hasil pengukuran berupa persentase level air dan flow rate ditampilkan pada LCD dan Serial Monitor. Pada sisi interrupt, ketika rotasi terdeteksi oleh rotary encoder, waktu saat ini disimpan dalam variabel timeNow, dan encoderDelay dihitung dari selisih timeNow dan timeLast. Nilai timeNow kemudian disimpan kembali ke timeLast untuk pembaruan data. Proses ini berulang secara kontinu untuk memastikan pengukuran berjalan real-time.
 
 ## 2. Simulasi Wokwi
 <div align="center">
     <img src="https://github.com/oreo240202/AQUASMART/blob/main/Software/ESP32_Source_Code/Rangkaian_Wokwi.jpeg?raw=true" alt="Simulasi Wokwi" width="500">
 </div>
+Simulasi pada gambar di atas menggunakan platform Wokwi bertujuan untuk memastikan bahwa rangkaian dapat berfungsi dengan baik sesuai desain, mulai dari membaca data sensor hingga menampilkan output pada LCD dan mengendalikan modul relay, sehingga meminimalkan potensi kesalahan sebelum implementasi pada perangkat keras sebenarnya
+
 
 Link : https://wokwi.com/projects/411618765119428609
 
@@ -150,16 +155,24 @@ Link : https://wokwi.com/projects/411618765119428609
 <div align="center">
     <img src="https://raw.githubusercontent.com/2122600021-ALFARRUQ/AQUASMART/refs/heads/Website/Diagram/node_red_flow.png" alt="Simulasi Wokwi" width="500">
 </div>
+Gambar di atas menunjukkan diagram alur Node-RED untuk sistem pengelolaan data berbasis IoT dengan topik AQUASMART. Dalam function 1 digunakan untuk mengolah data yang dikirimkan dari MQTT untuk diparsing agar bisa masuk kedalam database aquasmart. Terdapat percabangan dari Node AQUASMART/sensor yang menuju function 2. Data yang disimpan dapat diakses kembali melalui function ini yang mengarah ke node database. Hasil pemrosesan oleh function 3 dikirim ke control/solenoid untuk mengontrol katup solenoid.
 
 ## 4. SEQUENCE DIAGRAM
 <div align="center">
     <img src="https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/3778b2f44b3d93d860f37e5c0d14aa3951c5bfdd/Diagram/squance.png?raw=true" alt="SEQUENCE DIAGRAM" width="500">
 </div>
 
+Sequence diagram pada gambar diatas menunjukkan alur komunikasi antara user, ESP32, sensor, dan broker MQTT dalam sistem IoT. Proses dimulai ketika user mengirimkan perintah ke ESP32 melalui jaringan Wi-Fi. ESP32 memverifikasi koneksi Wi-Fi hingga berhasil, namun jika gagal, sistem meminta user untuk mencoba lagi. Setelah terhubung, ESP32 membaca data dari sensor, lalu data tersebut diproses sebelum dikirim ke broker MQTT untuk diakses lebih lanjut. Diagram ini menunjukkan interaksi yang terorganisir untuk memastikan data dari sensor dapat diteruskan dengan akurat ke server atau aplikasi yang memanfaatkan MQTT sebagai protokol komunikasi.
+
 ## 5. CLASS DIAGRAM
 <div align="center">
     <img src="https://github.com/2122600021-ALFARRUQ/AQUASMART/blob/main/Diagram/class.png?raw=true" alt="CLASS DIAGRAM" width="500">
 </div>
+
+Gambar di atas menujukkan hubungan antar kelas dalam sistem berbasis ESP32 untuk pemantauan dan pengelolaan data. Kelas utama adalah ESP32, yang memiliki fungsi seperti connectWiFi (koneksi ke jaringan Wi-Fi), collectData (pengumpulan data dari sensor), sendToMQTT (mengirim data ke server MQTT), dan syncTime (sinkronisasi waktu menggunakan NTP). ESP32 berinteraksi dengan dua jenis sensor: WaterLevelSensor, yang memiliki fungsi readLevel untuk membaca ketinggian air, dan FlowSensor, yang menggunakan fungsi readFlow untuk mengukur aliran air. Data yang dikumpulkan kemudian dikirim ke MQTTClient, yang bertugas melakukan koneksi (connect), publikasi data (publish), dan langganan ke topik tertentu (subscribe). Selain itu, sinkronisasi waktu dilakukan dengan bantuan NTPClient melalui fungsi syncTime. Diagram ini menunjukkan arsitektur terintegrasi antara pengumpulan data sensor, komunikasi MQTT, dan sinkronisasi waktu.
+
+# Web App
+Link Web App Project Aquasmart dapat di lihat di sini : https://aquasmart-fdbackfue8hjdhgg.canadacentral-01.azurewebsites.net/
 
 # Dokumentasi
 
@@ -176,7 +189,9 @@ https://github.com/user-attachments/assets/036225ad-1f3f-4121-946e-6db940966c42
 https://github.com/user-attachments/assets/7d10899d-bf8c-4fc1-9f14-af5eacd0cc40 
 ## 5. Video Pengujian Hardware
 https://github.com/user-attachments/assets/dedbf46f-3d43-4d81-ba96-16eca15a14ef
-## 6. Proses Pengerjaan
+## 6. Video Penggunaan Alat (User)
+https://youtu.be/zm1uCubxG-E
+## 7. Proses Pengerjaan
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b48404d0-b90c-4dd7-b640-3d69c6e4e424" alt="Image 1" width="200">
   <img src="https://github.com/user-attachments/assets/93b567e6-60e9-42d6-a9c2-8a759874346b" alt="Image 2" width="200">
@@ -187,9 +202,9 @@ https://github.com/user-attachments/assets/dedbf46f-3d43-4d81-ba96-16eca15a14ef
   <img src="https://github.com/user-attachments/assets/104cba61-26aa-4e5f-aec0-28c381f2a529" alt="Image 5" width="200">
 </p>
 
-## 7. Video Pengiklanan 
+## 8. Video Pengiklanan 
 https://github.com/user-attachments/assets/52b6b247-8677-437f-991a-c6e8a309753d 
-## 8. Video Presentasi
+## 9. Video Presentasi
 https://github.com/user-attachments/assets/3ab094f8-9b1d-4ff9-a2a7-7a724e087a73
 
 
